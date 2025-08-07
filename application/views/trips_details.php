@@ -129,9 +129,9 @@
                                  <li class="nav-item">
                                     <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Email Log</a>
                                  </li>
-                                 <li class="nav-item">
+                                 <!-- <li class="nav-item">
                                     <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">SMS Log</a>
-                                 </li>
+                                 </li> -->
                               </ul>
                            </div>
                            <div class="card-body">
@@ -319,10 +319,10 @@
                   data-target="#modal-tripexpense">
                   Trip Expense
                </a>
-               <a href="#" data-toggle="modal" data-target="#smsModal"
+               <!-- <a href="#" data-toggle="modal" data-target="#smsModal"
                   class="btn btn-sm btn-success mx-1">
                   Send SMS
-               </a>
+               </a> -->
                <a href="#" data-toggle="modal" data-target="#emailModal"
                   class="btn btn-sm btn-success mx-1">
                   Send Email
@@ -351,9 +351,9 @@
                <b class="d-block"><?= $driverdetails['d_licenseno']; ?></b>
                <?php  } else { echo '<b class="d-block"><span class="badge badge-danger">Yet to Assign</span></b>'; } ?>
                </p>
-               <p class="text-sm">Tracking URL
+               <!-- <p class="text-sm">Tracking URL
                <b class="d-block"><a target="_new" href="<?= base_url().'triptracking/'.$tripdetails['t_trackingcode']; ?>"><?= base_url().'triptracking/'.$tripdetails['t_trackingcode']; ?></a></b>
-               </p>
+               </p> -->
              
                </div>
                </div>
