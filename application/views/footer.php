@@ -1,8 +1,8 @@
 <footer class="main-footer">
-   <strong>Developed By <a href="http://codeforts.com" target="_blank">Codeforts</a>.</strong>
-   <div class="float-right d-none d-sm-inline-block">
+   <strong>Developed By <a href="https://www.dextrousinfo.com/" target="_blank">Dextrous Info Solutions Pvt. Ltd.</a>.</strong>
+   <!-- <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 7.0
-   </div>
+   </div> -->
 </footer>
 </div>
 </div>

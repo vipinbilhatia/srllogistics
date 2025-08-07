@@ -189,7 +189,7 @@
                            <span class="text">
                               <?= $reminder['v_name']. ' ';  ?>  : <?php if(isset($reminder['services'])) { foreach ($reminder['services'] as $service) {
                                  $serviceNames[] = $service['rs_name'];
-                                 }  echo implode(',', $serviceNames); $serviceNames = array(); ?> ( <?= $reminder['r_message']. ' ';  ?> )  =>  <?php  $result = daysUntilDueDate($reminder['r_date']);  
+                                 }  echo implode(',', $serviceNames??[]); $serviceNames = array(); ?> ( <?= $reminder['r_message']. ' ';  ?> )  =>  <?php  $result = daysUntilDueDate($reminder['r_date']);  
                                  switch ($result) {
                                    case "today":
                                      echo '<span class="badge badge-primary">Today is the due date!</span>';

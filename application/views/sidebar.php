@@ -195,7 +195,7 @@
             <?php } ?>
 
             <?php if(userpermission('lr_coupon')) { ?>
-            <li class="nav-item">
+            <li style="display:none" class="nav-item">
                <a href="<?= base_url(); ?>coupon" class="nav-link <?php echo activate_menu('coupon');?>">
                   <i class="nav-icon fa fa-copyright"></i>
                   <p>
@@ -206,7 +206,7 @@
             <?php } ?>
 
             <?php  if(userpermission('lr_maintenace')) { ?>
-            <li class="nav-item has-treeview <?php echo ((activate_menu('maintenance_edit'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('maintenance'))=='active') ? 'menu-open':'' ?><?php echo ((activate_menu('maintenance_vendor'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('mechanic'))=='active') ? 'menu-open':'' ?>
+            <li style="display:none" class="nav-item has-treeview <?php echo ((activate_menu('maintenance_edit'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('maintenance'))=='active') ? 'menu-open':'' ?><?php echo ((activate_menu('maintenance_vendor'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('mechanic'))=='active') ? 'menu-open':'' ?>
                <?php echo ((activate_menu('addmaintenance'))=='active') ? 'menu-open':'' ?> ">
                <a href="#" class="nav-link <?php echo activate_menu('maintenance');?>  <?php echo activate_menu('mechanic');?> <?php echo activate_menu('addmaintenance');?> <?php echo activate_menu('maintenance_vendor');?> <?php echo activate_menu('maintenance_edit');?>">
                   <i class="nav-icon fa fa-wrench"></i>
@@ -257,7 +257,7 @@
            
             
             <?php if(userpermission('lr_stock_add') || userpermission('lr_stock')) { ?>
-           <li class="nav-item has-treeview <?php echo ((activate_menu('stockinventory'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('purchasehistory'))=='active') ? 'menu-open':'' ?>
+           <li style="display:none" class="nav-item has-treeview <?php echo ((activate_menu('stockinventory'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('purchasehistory'))=='active') ? 'menu-open':'' ?>
                <?php echo ((activate_menu('addstockinventory'))=='active') ? 'menu-open':'' ?><?php echo ((activate_menu('editstock'))=='active') ? 'menu-open':'' ?>">
                <a href="#" class="nav-link <?php echo activate_menu('stockinventory');?> <?php echo activate_menu('addstockinventory');?><?php echo activate_menu('purchasehistory');?><?php echo activate_menu('editstock');?>">
                   <i class="nav-icon fas fa-barcode"></i>
@@ -293,7 +293,7 @@
           <?php } ?>
 
             <?php  if(userpermission('lr_fuel_list') || userpermission('lr_fuel_add')) { ?>
-            <li class="nav-item has-treeview <?php echo ((activate_menu('fuel'))=='active') ? 'menu-open':'' ?><?php echo ((activate_menu('fuelvendor'))=='active') ? 'menu-open':'' ?>
+            <li style="display:none" class="nav-item has-treeview <?php echo ((activate_menu('fuel'))=='active') ? 'menu-open':'' ?><?php echo ((activate_menu('fuelvendor'))=='active') ? 'menu-open':'' ?>
                <?php echo ((activate_menu('addfuel'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('editfuel'))=='active') ? 'menu-open':'' ?>">
                <a href="#" class="nav-link <?php echo activate_menu('fuel');?> <?php echo activate_menu('fuelvendor');?>  <?php echo activate_menu('addfuel');?><?php echo activate_menu('editfuel');?>">
                   <i class="nav-icon fa fa-battery-three-quarters"></i>
@@ -330,7 +330,7 @@
                </ul>
             </li>
             <?php }  if(userpermission('lr_reminder_list') || userpermission('lr_reminder_add')) { ?>
-            <li class="nav-item has-treeview <?php echo ((activate_menu('reminder'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('services'))=='active') ? 'menu-open':'' ?>
+            <li style="display:none" class="nav-item has-treeview <?php echo ((activate_menu('reminder'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('services'))=='active') ? 'menu-open':'' ?>
                <?php echo ((activate_menu('addreminder'))=='active') ? 'menu-open':'' ?><?php echo ((activate_menu('editreminder'))=='active') ? 'menu-open':'' ?>">
                <a href="#" class="nav-link <?php echo activate_menu('reminder');?> <?php echo activate_menu('services');?> <?php echo activate_menu('addreminder');?><?php echo activate_menu('editreminder');?>">
                   <i class="nav-icon fas fa fa-bullhorn"></i>
@@ -420,7 +420,7 @@
 
             
             <?php if(userpermission('lr_tracking') || userpermission('lr_liveloc')) { ?>
-           <li class="nav-item has-treeview <?php echo ((activate_menu('tracking'))=='active') ? 'menu-open':'' ?>
+           <li style="display:none" class="nav-item has-treeview <?php echo ((activate_menu('tracking'))=='active') ? 'menu-open':'' ?>
                <?php echo ((activate_menu('livestatus'))=='active') ? 'menu-open':'' ?>">
                <a href="#" class="nav-link <?php echo activate_menu('tracking');?> <?php echo activate_menu('livestatus');?>">
                   <i class="nav-icon fa fa-map-pin"></i>
@@ -449,7 +449,7 @@
             </li> 
              <?php }  
              if(userpermission('lr_geofence_add') || userpermission('lr_geofence_list') || userpermission('lr_geofence_events')) { ?>
-            <li class="nav-item has-treeview <?php echo ((activate_menu('addgeofence'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('geofenceevents'))=='active') ? 'menu-open':'' ?>
+            <li style="display:none" class="nav-item has-treeview <?php echo ((activate_menu('addgeofence'))=='active') ? 'menu-open':'' ?> <?php echo ((activate_menu('geofenceevents'))=='active') ? 'menu-open':'' ?>
                <?php echo ((activate_menu('geofence'))=='active') ? 'menu-open':'' ?>">
                <a href="#" class="nav-link <?php echo activate_menu('geofence');?> <?php echo activate_menu('addgeofence');?> <?php echo activate_menu('geofenceevents');?>">
                   <i class="nav-icon fa fa-street-view"></i>
@@ -630,24 +630,24 @@
                      </a>
                   </li>
 
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                      <a href="<?= base_url(); ?>settings/smsconfig" class="nav-link <?php echo activate_menu('smsconfig');?>">
                         <i class="nav-icon fas faa-plus"></i>
                         <p>SMS Configuration</p>
                      </a>
-                  </li>
-                  <li class="nav-item">
+                  </li> -->
+                  <!-- <li class="nav-item">
                      <a href="<?= base_url(); ?>settings/sms_template" class="nav-link <?php echo activate_menu('sms_template');?><?php echo activate_menu('edit_sms_template');?>">
                         <i class="nav-icon fas faa-plus"></i>
                         <p>SMS Template</p>
                      </a>
-                  </li>
-                  <li class="nav-item">
+                  </li> -->
+                  <!-- <li class="nav-item">
                      <a href="<?= base_url(); ?>settings/websitesetting_traccar" class="nav-link <?php echo activate_menu('websitesetting_traccar');?>">
                         <i class="nav-icon fas faa-plus"></i>
                         <p>Traccar Config</p>
                      </a>
-                  </li>
+                  </li> -->
 
                   <li class="nav-item">
                      <a href="<?= base_url(); ?>backup" class="nav-link <?php echo activate_menu('backup');?>">
