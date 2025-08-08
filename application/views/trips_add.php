@@ -285,7 +285,7 @@
                      <div class="custom-control custom-checkbox">
                         <input type="checkbox" value="1" name="t_bookingsms" id="bookingsms" class="custom-control-input" id="bookingsms" <?php echo (isset($tripdetails[0]['t_bookingsms']) && $tripdetails[0]['t_bookingsms']==1) ? 'checked':'' ?>>
                         <!-- <label class="custom-control-label" for="bookingsms">Booking SMS</label> -->
-                     </div>aasa
+                     </div>
                   </div>
                </div>
             </div>
